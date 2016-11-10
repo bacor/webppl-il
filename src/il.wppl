@@ -1,0 +1,89 @@
+var il = function() {
+
+    var Agent = function(name, params) {
+
+        var Prior = mem(function() {
+            return Infer({ method: 'enumerate' }, function() {
+                if (flip(params.alpha)) {
+                    return uniformDraw(params.compLangs);
+                } else {
+                    return repeat(4, function() { uniformDraw(params.symbols) });
+                }
+            });
+        });
+
+        var Predictive = mem(function(x, hyp) {
+            var y = hyp[params.meanings.indexOf(x)]; // 'Correct' symbol for x
+            return Infer({ method: 'enumerate' }, function() {
+                if (flip(params.eps)) {
+                    return uniformDraw(remove(y, params.symbols));
+                } else {
+                    return y;
+                }
+            })
+        });
+
+        var Posterior = function(xs, ys, prior, _toString) {
+            var _toString = _toString || false;
+            return Infer({ method: 'MCMC', samples: params.samples }, function() {
+                var hyp = sample(prior);
+                var predictives = map(function(x) { Predictive(x, hyp) }, xs)
+                var likelihood = sum(map(function(pred_y) { pred_y[0].score(pred_y[1]) }, zip(predictives, ys)))
+                factor(likelihood)
+                if (_toString) return hyp.join(' ');
+                return hyp
+            })
+        };
+
+        var produce = function(xs, hyp) {
+            return map(function(x) { sample(Predictive(x, hyp)) }, xs);
+        }
+
+        var learn = function(xs, ys) {
+            var prior = Prior(params);
+            var hyp = sample(Posterior(xs, ys, prior))
+            return hyp;
+        }
+
+        return {
+            Posterior: Posterior,
+            Prior: Prior,
+            Predictive: Predictive,
+            produce: produce,
+            learn: learn,
+            params: params,
+            name: name
+        }
+    }
+
+    var Generation = function(agents) {
+
+        // Get hypotheses for all agents
+        var learn = function(xs, ys) {
+            map(function(agent) {
+                call(agent.learn, [xs, ys])
+            }, agents)
+        };
+
+        // Get xs and ys from input x for one agent and 
+        // hypotheses for all. The input x is repeated.
+        var produce = function(x, hypos) {
+            var xs = _.flatten(repeat(agents.length, function() { x }));
+            var ys = _.flatten(map(function(agent_hyp) {
+                call(agent_hyp[0].produce, [x, agent_hyp[1]]);
+            }, zip(agents, hypos)));
+            return [xs, ys];
+        }
+
+        return {
+            produce: produce,
+            learn: learn,
+            agents: agents
+        }
+    }
+
+    return {
+    	Agent: Agent,
+    	Generation: Generation
+    }
+};

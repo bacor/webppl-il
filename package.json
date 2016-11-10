@@ -1,0 +1,14 @@
+{
+  "name": "webppl-il",
+  "description": "Iterated Learning with webppl",
+  "license": "CC-4.0",
+  "email": "post@bascornelissen.nl",
+  "repository": "https://github.com/bacor/webppl-il",
+  "version": "0.1.0",
+  "main": "src/main.js",
+  "webppl": {
+    "wppl": [
+      "src/il.wppl"
+    ]
+  }
+}
