@@ -1,0 +1,167 @@
+{
+  "symbols": [
+    "aa",
+    "ab",
+    "ba",
+    "bb"
+  ],
+  "meanings": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "compLangs": [
+    [
+      "aa",
+      "aa",
+      "aa",
+      "aa"
+    ],
+    [
+      "aa",
+      "ab",
+      "ba",
+      "bb"
+    ],
+    [
+      "bb",
+      "ba",
+      "ab",
+      "aa"
+    ],
+    [
+      "bb",
+      "bb",
+      "bb",
+      "bb"
+    ]
+  ],
+  "samples": 1000,
+  "alpha": 0.5,
+  "eps": 0.05,
+  "b": 1,
+  "value": [
+    [
+      "aa ab ab bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb ab ba aa"
+    ],
+    [
+      "bb bb aa ba"
+    ],
+    [
+      "ba bb bb ba"
+    ],
+    [
+      "ab ba bb ba"
+    ],
+    [
+      "bb aa aa ba"
+    ],
+    [
+      "ab aa ab ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab ab bb aa"
+    ],
+    [
+      "ab bb ba aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab ba ba bb"
+    ],
+    [
+      "ab aa bb aa"
+    ],
+    [
+      "ab bb aa ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb ab aa aa"
+    ],
+    [
+      "aa aa bb bb"
+    ],
+    [
+      "aa ba ba ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba aa aa ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb aa ba aa"
+    ],
+    [
+      "ba bb ba ab"
+    ],
+    [
+      "bb ba aa ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba ab ba aa"
+    ],
+    [
+      "ba aa ab ab"
+    ],
+    [
+      "ba ab ab ba"
+    ],
+    [
+      "ba ab ab bb"
+    ],
+    [
+      "ab ab bb ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab aa bb"
+    ],
+    [
+      "ab ab ba bb"
+    ]
+  ],
+  "runtimeInMilliseconds": 21256
+}

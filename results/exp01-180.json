@@ -1,0 +1,588 @@
+{
+  "n": 180,
+  "symbols": [
+    "aa",
+    "ab",
+    "ba",
+    "bb"
+  ],
+  "meanings": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "compLangs": [
+    [
+      "aa",
+      "aa",
+      "aa",
+      "aa"
+    ],
+    [
+      "aa",
+      "ab",
+      "ba",
+      "bb"
+    ],
+    [
+      "bb",
+      "ba",
+      "ab",
+      "aa"
+    ],
+    [
+      "bb",
+      "bb",
+      "bb",
+      "bb"
+    ]
+  ],
+  "samples": 1000,
+  "alpha": 0.5,
+  "eps": 0.05,
+  "b": 1,
+  "value": [
+    [
+      "ba bb ab ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ab bb aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba bb bb aa"
+    ],
+    [
+      "ba ba bb bb"
+    ],
+    [
+      "ba ba ba bb"
+    ],
+    [
+      "aa aa ba ab"
+    ],
+    [
+      "ab aa bb ab"
+    ],
+    [
+      "ab ba ab ba"
+    ],
+    [
+      "bb ba ba ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba aa ba aa"
+    ],
+    [
+      "ab ba aa aa"
+    ],
+    [
+      "ab bb bb ab"
+    ],
+    [
+      "bb ab bb aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa aa ba ba"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb ab ba bb"
+    ],
+    [
+      "bb ab bb bb"
+    ],
+    [
+      "bb bb aa aa"
+    ],
+    [
+      "ba ba aa aa"
+    ],
+    [
+      "ba aa aa ab"
+    ],
+    [
+      "ab ab ab ab"
+    ],
+    [
+      "ba ab aa ab"
+    ],
+    [
+      "aa ab aa aa"
+    ],
+    [
+      "ba aa aa ba"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba ba aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba ba aa bb"
+    ],
+    [
+      "aa bb aa bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ab aa aa ab"
+    ],
+    [
+      "ab aa aa bb"
+    ],
+    [
+      "aa ba aa bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa ba aa ab"
+    ],
+    [
+      "aa bb aa bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "bb bb ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab bb bb"
+    ],
+    [
+      "aa aa ab bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ab bb aa ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb aa ab bb"
+    ],
+    [
+      "ba aa ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ba bb ab"
+    ],
+    [
+      "ab ba ab bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ab ba ab aa"
+    ],
+    [
+      "aa ba bb ba"
+    ],
+    [
+      "bb ba ba ab"
+    ],
+    [
+      "ab ab bb ab"
+    ],
+    [
+      "aa ab ba ab"
+    ],
+    [
+      "aa ab ab ba"
+    ],
+    [
+      "bb ab ab ba"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb aa"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa bb bb bb"
+    ],
+    [
+      "ab ab ab bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab ab bb aa"
+    ],
+    [
+      "ba aa bb aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ab ab bb ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ab aa aa aa"
+    ],
+    [
+      "ab ab aa ab"
+    ],
+    [
+      "aa ab aa ba"
+    ],
+    [
+      "aa ba aa bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba ab bb aa"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab bb ba bb"
+    ],
+    [
+      "aa bb ba bb"
+    ],
+    [
+      "bb bb bb ab"
+    ],
+    [
+      "bb ba bb ba"
+    ],
+    [
+      "bb aa ab ba"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba ba"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa ba ba"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba bb ba ba"
+    ],
+    [
+      "ab aa bb ba"
+    ],
+    [
+      "ab ab ba ab"
+    ],
+    [
+      "aa ba bb ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa bb aa bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ab bb aa ab"
+    ],
+    [
+      "ab bb ab ab"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa bb ab"
+    ],
+    [
+      "ba ab ba ab"
+    ],
+    [
+      "ba aa aa ab"
+    ],
+    [
+      "ba bb aa bb"
+    ],
+    [
+      "ba bb aa aa"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa bb ab ba"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ba bb bb ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb aa ba aa"
+    ],
+    [
+      "ab ab aa aa"
+    ],
+    [
+      "ba ab aa aa"
+    ],
+    [
+      "ab ba ba ab"
+    ],
+    [
+      "aa aa ba ab"
+    ],
+    [
+      "aa ba ba aa"
+    ],
+    [
+      "ba ab ba aa"
+    ],
+    [
+      "ba ba bb ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab aa ba bb"
+    ],
+    [
+      "ab aa bb bb"
+    ],
+    [
+      "bb ba bb aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ba ba ab aa"
+    ],
+    [
+      "ab ba ab ba"
+    ],
+    [
+      "bb bb bb ba"
+    ],
+    [
+      "bb bb aa ab"
+    ],
+    [
+      "aa aa ab ab"
+    ],
+    [
+      "bb bb ab ab"
+    ],
+    [
+      "ba ba ab ab"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa ba ab ba"
+    ],
+    [
+      "ba ab ab ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa ba ab bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ba ab bb ba"
+    ],
+    [
+      "bb bb ba ba"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa ab ba bb"
+    ]
+  ],
+  "runtimeInMilliseconds": 212292
+}

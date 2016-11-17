@@ -33,17 +33,18 @@
 var simulate = function(gen, n, data, _hypotheses) {
 
   // Infer hypotheses for all agents
-  var hypos = call(gen.learn, data)
+  var hypos = call(gen.learn, data);
 
   // Store as strings (rather than objects)
-  var hypos_str = map(function(h){ h.join(" ")}, hypos)
-  var _hypotheses = append(_hypotheses || [], [hypos_str]);
-  if(n == 1) return _hypotheses;
+  var hyposStr = map(function(h){ return h.join(" "); }, hypos);
+  var _hypotheses = append(_hypotheses || [], [hyposStr]);
+  if(n === 1) { return _hypotheses; }
 
   // Generate new data
-  var x  = repeat(gen.agents[0].params.b, function() { uniformDraw(gen.agents[0].params.meanings) });
-  var newData = call(gen.produce, [x, hypos])
+  var x  = repeat(gen.agents[0].params.b, function() { 
+    return uniformDraw(gen.agents[0].params.meanings); });
+  var newData = call(gen.produce, [x, hypos]);
   
   // Pass data to next agent
   return simulate(gen, n-1, newData, _hypotheses);
-}
+};

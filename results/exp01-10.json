@@ -1,0 +1,77 @@
+{
+  "symbols": [
+    "aa",
+    "ab",
+    "ba",
+    "bb"
+  ],
+  "meanings": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "compLangs": [
+    [
+      "aa",
+      "aa",
+      "aa",
+      "aa"
+    ],
+    [
+      "aa",
+      "ab",
+      "ba",
+      "bb"
+    ],
+    [
+      "bb",
+      "ba",
+      "ab",
+      "aa"
+    ],
+    [
+      "bb",
+      "bb",
+      "bb",
+      "bb"
+    ]
+  ],
+  "samples": 1000,
+  "alpha": 0.5,
+  "eps": 0.05,
+  "b": 1,
+  "value": [
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "ba bb aa aa"
+    ],
+    [
+      "aa ba bb aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ba aa ab"
+    ],
+    [
+      "ab ba aa bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ]
+  ],
+  "runtimeInMilliseconds": 2849
+}

@@ -34,15 +34,15 @@ var KalishGriffithsAgent = function(name, params) {
      * Return the prior distribution over hypotheses
      * @return {dist}   the prior
      */
-    var Prior = mem(function() {
+    var Prior = function() {
         return Infer({ method: 'enumerate' }, function() {
             if (flip(params.alpha)) {
                 return uniformDraw(params.compLangs);
             } else {
-                return repeat(4, function() { uniformDraw(params.symbols) });
+                return repeat(4, function() { return uniformDraw(params.symbols); });
             }
         });
-    });
+    };
 
 
     /**
@@ -52,7 +52,7 @@ var KalishGriffithsAgent = function(name, params) {
      * @param  {object} hyp       hypothesis
      * @return {dist}              predictive distribution
      */
-    var Predictive = mem(function(x, hyp) {
+    var Predictive = function(x, hyp) {
         var y = hyp[params.meanings.indexOf(x)]; // 'Correct' symbol for x
         return Infer({ method: 'enumerate' }, function() {
             if (flip(params.eps)) {
@@ -60,8 +60,8 @@ var KalishGriffithsAgent = function(name, params) {
             } else {
                 return y;
             }
-        })
-    });
+        });
+    };
 
     /**
      * Return the posterior distribution over hypotheses given datapoints
@@ -75,12 +75,20 @@ var KalishGriffithsAgent = function(name, params) {
         var _toString = _toString || false;
         return Infer({ method: 'MCMC', samples: params.samples }, function() {
             var hyp = sample(prior);
-            var predictives = map(function(x) { Predictive(x, hyp) }, xs)
-            var likelihood = sum(map(function(pred_y) { pred_y[0].score(pred_y[1]) }, zip(predictives, ys)))
-            factor(likelihood)
-            if (_toString) return hyp.join(' ');
-            return hyp
-        })
+            
+            var predictives = map(function(x) { 
+                return Predictive(x, hyp); 
+            }, xs);
+            
+            var likelihood = sum(map(function(predY) { 
+                return predY[0].score(predY[1]); 
+            }, zip(predictives, ys)));
+            
+            factor(likelihood);
+            
+            if (_toString) { return hyp.join(' '); }
+            return hyp;
+        });
     };
 
     /**
@@ -90,8 +98,10 @@ var KalishGriffithsAgent = function(name, params) {
      * @return {list}       List of symbols `ys`
      */
     var produce = function(xs, hyp) {
-        return map(function(x) { sample(Predictive(x, hyp)) }, xs);
-    }
+        return map(function(x) { 
+            return sample(Predictive(x, hyp)); 
+        }, xs);
+    };
 
     /**
      * Infer a hypothesis from a list of datapoints (xs and ys)
@@ -101,9 +111,9 @@ var KalishGriffithsAgent = function(name, params) {
      */
     var learn = function(xs, ys) {
         var prior = Prior(params);
-        var hyp = sample(Posterior(xs, ys, prior))
+        var hyp = sample(Posterior(xs, ys, prior));
         return hyp;
-    }
+    };
 
     return {
         Posterior: Posterior,
@@ -113,5 +123,5 @@ var KalishGriffithsAgent = function(name, params) {
         learn: learn,
         params: params,
         name: name
-    }
-}
+    };
+};

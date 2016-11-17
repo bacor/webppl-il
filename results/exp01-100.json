@@ -1,0 +1,347 @@
+{
+  "symbols": [
+    "aa",
+    "ab",
+    "ba",
+    "bb"
+  ],
+  "meanings": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "compLangs": [
+    [
+      "aa",
+      "aa",
+      "aa",
+      "aa"
+    ],
+    [
+      "aa",
+      "ab",
+      "ba",
+      "bb"
+    ],
+    [
+      "bb",
+      "ba",
+      "ab",
+      "aa"
+    ],
+    [
+      "bb",
+      "bb",
+      "bb",
+      "bb"
+    ]
+  ],
+  "samples": 1000,
+  "alpha": 0.5,
+  "eps": 0.05,
+  "b": 1,
+  "value": [
+    [
+      "ab aa aa aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ba bb ab aa"
+    ],
+    [
+      "aa ba ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa ab aa bb"
+    ],
+    [
+      "ab ab ab aa"
+    ],
+    [
+      "ba aa ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb bb aa ab"
+    ],
+    [
+      "ba aa aa bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa ab aa ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba ba ba aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ba ab bb"
+    ],
+    [
+      "aa ab aa bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb bb aa ba"
+    ],
+    [
+      "aa aa bb ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ba ba ab bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa ba bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ba bb ab bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb ab"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa bb aa"
+    ],
+    [
+      "bb ba ab ba"
+    ],
+    [
+      "ab ba aa ab"
+    ],
+    [
+      "ab bb aa ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb ab bb ba"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "aa bb ab ab"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "bb aa ab ba"
+    ],
+    [
+      "ba aa bb ba"
+    ],
+    [
+      "ba ab bb aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba ab ba bb"
+    ],
+    [
+      "ab aa ba aa"
+    ],
+    [
+      "ab aa ba bb"
+    ],
+    [
+      "ab ab ab bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb ab aa"
+    ],
+    [
+      "bb bb bb aa"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "ab ab bb bb"
+    ],
+    [
+      "bb ab bb ba"
+    ],
+    [
+      "aa aa aa ba"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb aa ab bb"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ba bb ab ab"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "aa aa aa aa"
+    ],
+    [
+      "bb ba ab aa"
+    ],
+    [
+      "ab ba ab aa"
+    ],
+    [
+      "ba aa ab bb"
+    ],
+    [
+      "ab ba aa aa"
+    ],
+    [
+      "ab ba bb bb"
+    ],
+    [
+      "aa ba aa aa"
+    ],
+    [
+      "aa ab aa ba"
+    ],
+    [
+      "bb bb aa ba"
+    ],
+    [
+      "bb ab ab ab"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb bb bb"
+    ],
+    [
+      "bb bb ba aa"
+    ],
+    [
+      "aa ab ba bb"
+    ],
+    [
+      "ba bb ab ab"
+    ],
+    [
+      "ba aa bb aa"
+    ],
+    [
+      "ab aa aa aa"
+    ]
+  ],
+  "runtimeInMilliseconds": 157744
+}

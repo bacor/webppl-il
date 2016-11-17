@@ -1,0 +1,60 @@
+/**
+ * Experiment with single-agent transmission chains
+ */
+
+// Default
+var params = {
+  description: "Transmission chain with four identical agents in every generation.",
+  symbols:    ['aa', 'ab', 'ba', 'bb'],
+  meanings:   ['00', '01', '10', '11'],
+  compLangs:  [['aa', 'aa', 'aa', 'aa'],  // 0 -> a, 1 -> a
+               ['aa', 'ab', 'ba', 'bb'],  // 0 -> a, 1 -> b
+               ['bb', 'ba', 'ab', 'aa'],  // 0 -> b, 1 -> a
+               ['bb', 'bb', 'bb', 'bb']], // 0 -> b, 1 -> b,
+  samples:    1000,
+  alpha:      .5,
+  eps:        .05,
+  b:          1,
+  n:          1000
+};
+
+var experiment = function(name, params) {
+  // Initial data
+  var xs = ['00', '00', '00', '00'];
+  var ys = ['aa', 'ab', 'ba', 'bb'];
+
+  // Agent and generation
+  var paramsA = _.defaults({ alpha: .1 }, params)
+  var A = KalishGriffithsAgent('A', paramsA);
+  var paramsB = _.defaults({ alpha: .5 }, params)
+  var B = KalishGriffithsAgent('B', paramsB);
+  var paramsC = _.defaults({ alpha: .9 }, params)
+  var C = KalishGriffithsAgent('C', paramsC);
+  // var D = KalishGriffithsAgent('D', params);
+  var gen = Generation([A, B, C])
+  var results = timeit(function() { simulate(gen, params.n, [xs, ys]) })
+
+  // Store
+  var out = _.extend(results, { params: [paramsA, paramsB, paramsC] } )
+  var json = JSON.stringify(out, null, 2)
+  fs.write(name + '.json', json);
+}
+
+// Experiment 1
+map(function(n) {
+  experiment('ma07-'+n, _.defaults({n : n}, params));  
+}, [5000])
+
+
+// // Experiment 2
+// experiment('exp02', _.defaults({b: 3}, params))
+
+// // Experiment 3
+// experiment('exp03', _.defaults({b: 10}, params))
+
+// // Experiment 4
+// experiment('exp04', _.defaults({alpha:0.01, b: 3}, params))
+
+
+
+
